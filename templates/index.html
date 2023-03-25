@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Churn</title>
+</head>
+<body>
+
+    <h1>Customer Churn</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="POST" action="/predict">
+        <label>accountlength</label><br>
+        <input type="text" name="accountlength"><br><br>
+
+		<label>numbervmailmessages</label><br>
+        <input type="text" name="numbervmailmessages"><br><br>
+
+		<label>totaldayminutes</label><br>
+        <input type="text" name="totaldayminutes"><br><br>
+
+		<label>totaldaycalls</label><br>
+        <input type="text" name="totaldaycalls"><br><br>
+
+		<label>totaldaycharge</label><br>
+        <input type="text" name="totaldaycharge"><br><br>
+
+		<label>totaleveminutes</label><br>
+        <input type="text" name="totaleveminutes"><br><br>
+
+		<label>totalevecalls</label><br>
+        <input type="text" name="totalevecalls"><br><br>
+
+		<label>totalevecharge</label><br>
+        <input type="text" name="totalevecharge"><br><br>
+
+		<label>totalnightminutes</label><br>
+        <input type="text" name="totalnightminutes"><br><br>
+
+        <label>totalnightcalls</label><br>
+        <input type="text" name="totalnightcalls"><br><br>
+
+        <label>totalnightcharge</label><br>
+        <input type="text" name="totalnightcharge"><br><br>
+
+        <label>totalintlminutes</label><br>
+        <input type="text" name="totalintlminutes"><br><br>
+
+        <label>totalintlcalls</label><br>
+        <input type="text" name="totalintlcalls"><br><br>
+
+        <label>totalintlcharge</label><br>
+        <input type="text" name="totalintlcharge"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
